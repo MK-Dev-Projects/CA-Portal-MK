@@ -1,0 +1,104 @@
+.aboutUs {
+  color: var(--headingColor);
+  padding: 0 18%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.aboutUs h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 8rem 0 2rem;
+  padding: 4rem 0 0;
+}
+
+.aboutusContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.aboutusContent p {
+  text-align: justify;
+  color: var(--descColor);
+  font-size: 1.3rem;
+}
+
+.aboutusContent img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1250px) {
+  .aboutusContent p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .aboutUs {
+    padding: 0 15%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .aboutUs {
+    padding: 0 10%;
+  }
+
+  .aboutusContent {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .aboutUs {
+    padding: 0 20vw;
+  }
+
+  .aboutusContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .aboutusContent img {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .aboutusContent p {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .aboutUs {
+    padding: 0 10vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aboutUs {
+    padding: 0 10vw;
+  }
+
+  .aboutUs h1 {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .aboutusContent img {
+    width: 200px;
+  }
+  .aboutUs h1 {
+    font-size: 1.5rem;
+  }
+
+  .aboutusContent p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,29 @@
+.contact {
+  margin-bottom: 5%;
+  padding: 1rem 0 0;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.cardsContainer {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 8rem 0 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (width <= 600px) {
+  .contact h1 {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+}

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+.card {
+  position: relative;
+  color: var(--headingColor);
+  box-sizing: border-box;
+  padding: 15px 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 340px;
+  width: 230px;
+  margin: 10px;
+  background: var(--cardColor);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.6px);
+  -webkit-backdrop-filter: blur(11.6px);
+  overflow: hidden;
+}
+
+.profile {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid var(--headingColor);
+}
+
+.profilename {
+  font-size: 20px;
+}
+
+.about {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--headingColor);
+}
+
+.card p {
+  margin-top: 0;
+}
+
+.card a svg {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  fill: var(--headingColor);
+}
+
+.contactInfo {
+  font-size: 18px;
+  background-color: var(--cardColor);
+}
+
+.contactInfo p {
+  margin: 5px 0 0;
+}
+
+.card:hover .contactInfo {
+  transform: translateY(-120px);
+  transition: all 0.2s ease-in-out;
+}
+
+.socialLinks {
+  margin-top: 20px;
+}
+
+.socialLinks a svg:hover {
+  fill: var(--descColor);
+}

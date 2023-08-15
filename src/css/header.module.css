@@ -1,0 +1,143 @@
+.header {
+  min-height: 100vh;
+  background: url("../assets/images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: -10;
+  box-sizing: border-box;
+  padding-top: 80px;
+}
+
+/* Heading */
+
+.intro {
+  font-family: "Montserrat", sans-serif;
+  color: var(--headingColor);
+  padding: 2rem;
+}
+
+.heading {
+  color: var(--cardColor);
+  font-size: 3rem;
+}
+
+.heading::selection {
+  background: var(--cardColor);
+  color: var(--headingColor);
+}
+
+.ca {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.ca::selection {
+  background: var(--headingColor);
+  color: var(--bgColor);
+}
+
+.para {
+  font-size: 1.2rem;
+  color: var(--descColor);
+  width: 70%;
+}
+
+.paratext::selection {
+  background: var(--descColor);
+  color: var(--headingColor);
+}
+
+.join {
+  background: var(--cardColor);
+  color: var(--headingColor);
+  border-radius: 5px;
+  border: none;
+  margin-left: 5px;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    font-size: 1.8em;
+  }
+  .ca {
+    font-size: 1.3em;
+  }
+}
+
+/* Rotating Divs */
+
+.stats {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.singleDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.grad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, var(--cardColor), var(--bgColor));
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  animation: rot 2s infinite;
+  animation-delay: 0s;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rot2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--headingColor);
+  width: 95%;
+  height: 95%;
+  background-color: var(--bgColor);
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 900;
+}
+.text span {
+  animation: rot2 2s infinite;
+  animation-delay: 0s;
+}
+.name {
+  padding-top: 10px;
+  text-align: center;
+  color: var(--headingColor);
+  font-size: 20px;
+  font-weight: 900;
+}

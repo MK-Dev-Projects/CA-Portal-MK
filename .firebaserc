@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "dev-manthan-mk"
+  },
+  "targets": {
+    "dev-manthan-mk": {
+      "hosting": {
+        "ca-manthan-mk": [
+          "ca-manthan-mk"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

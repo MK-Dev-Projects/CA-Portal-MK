@@ -1,0 +1,57 @@
+.faq {
+  margin: 0 10%;
+}
+
+.faq h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 0 2rem;
+  padding: 5rem 0 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.comprules {
+  color: var(--headingColor);
+  width: 70%;
+  margin: auto;
+}
+
+.rulebutton {
+  font-size: 20px;
+  font-weight: 500;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: var(--cardColor);
+  margin-bottom: 25px;
+  padding-left: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+@media (width <= 1000px) {
+  .rulebutton {
+    height: 70px;
+  }
+}
+
+@media (width <= 600px) {
+  .comprules {
+    width: 85%;
+  }
+
+  .rulebutton {
+    font-size: 17px;
+  }
+
+  .faq h1 {
+    font-size: 2rem;
+
+    margin-top: 4rem;
+  }
+}
+
+.rulebutton:hover {
+  color: var(--bgColor);
+  background: var(--secondaryColor);
+}

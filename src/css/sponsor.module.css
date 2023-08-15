@@ -1,0 +1,50 @@
+.sponsors {
+  padding: 2% 5%;
+}
+
+.sponsors div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 50px 0;
+}
+
+.sponsors img {
+  width: 250px;
+  height: 200px;
+}
+
+.sponsors img:hover {
+  transform: scale(1.25);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.sponsors h1 {
+  font-size: 3rem;
+  text-align: center;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.sponsors h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+@media (width <= 600px) {
+  .sponsors h1 {
+    font-size: 2rem;
+  }
+
+  .sponsors h2 {
+    text-align: center;
+    font-size: 22px;
+  }
+}
+
+.tba {
+  color: var(--descColor);
+}

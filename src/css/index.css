@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primaryColor: #19191b;
+  --secondaryColor: #a50000;
+  --cardColor: #df1607;
+  --shadowColor: rgb(234, 234, 234);
+  --descColor: rgb(146, 146, 146);
+  --bgColor: black;
+  --headingColor: white;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondaryColor);
+}
+
+/* Remove Arrow from Number input fields */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
